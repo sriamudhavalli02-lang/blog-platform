@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 function Register() {
@@ -13,7 +14,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "https://blog-platform-1-2wds.onrender.com/api/auth/register"
+        "https://blog-platform-1-2wds.onrender.com/api/auth/register",
         {
           method: "POST",
           headers: {
@@ -38,7 +39,7 @@ function Register() {
         setMessage(data.message || "Registration failed");
       }
     } catch (error) {
-      console.error(error);
+      console.error("Registration error:", error);
       setMessage("Unable to connect to server");
     }
   };

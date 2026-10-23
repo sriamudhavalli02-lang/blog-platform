@@ -27,7 +27,7 @@ function CreatePost({ onPostCreated }) {
 
     try {
       const response = await fetch(
-      "https://blog-platform-1-2wds.onrender.com/api/posts"
+        "https://blog-platform-1-2wds.onrender.com/api/posts",
         {
           method: "POST",
           headers: {
@@ -45,7 +45,6 @@ function CreatePost({ onPostCreated }) {
 
       if (response.ok) {
         setMessage("Post published successfully! 🎉");
-
         setTitle("");
         setContent("");
 
@@ -67,7 +66,6 @@ function CreatePost({ onPostCreated }) {
     <div className="auth-page">
       <div className="auth-card">
         <h1>✍️ Create Post</h1>
-
         <p>Share your story with the world 🌎</p>
 
         <form onSubmit={handleCreatePost}>
