@@ -19,7 +19,7 @@ function App() {
       setLoading(true);
       setError("");
 
-      const response = await fetch("http://localhost:5000/api/posts");
+      const response = await fetch("https://blog-platform-1-2wds.onrender.com/api/posts")
 
       if (!response.ok) {
         throw new Error("Posts load aagala");

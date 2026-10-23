@@ -27,7 +27,7 @@ function CreatePost({ onPostCreated }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/posts",
+      "https://blog-platform-1-2wds.onrender.com/api/posts"
         {
           method: "POST",
           headers: {
